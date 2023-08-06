@@ -1,4 +1,4 @@
-# Proyecto_ETL_Precipitaciones
+## Proyecto_ETL_Precipitaciones
 
 Descripción del proyecto:
 
@@ -6,7 +6,7 @@ Se ha recogido una muestra de provincias de España a partir de una tabla con da
 
 Se ha enriquecido la muestra con valores climatológicos y de tipos de explotaciones agrarias para estudiar una relación entre el tipo de agricultura en cada provincia de nuestra muestra y los valores de precipitación media de estas.
 
-Procedimiento:
+# Procedimiento:
 
 A partir de una base de datos completa de los municipios españoles y datos correspondientes al censo de habitantes y superficie, se ha optado por recoger una muestra aleatoria de provincias para nuestro análisis.
 
@@ -20,7 +20,7 @@ Se crea una base de datos SQL para contener toda la información de manera estru
 
 Finalmente, se ha realizado un análisis gráfico para ver la relación entre las precipitaciones por provincia y ella distribución del tipo de explotación agraria.
 
-Estructura de los datos:
+# Estructura de los datos:
 
 Se han creado varias carpetas donde se contienen los datos de la tablas descargadas, las tablas limpiadas y notebooks de limpieza y análisis de datos.
 
@@ -32,7 +32,7 @@ Se han creado varias carpetas donde se contienen los datos de la tablas descarga
 
 Fuentes:
 
-API AEMET
-KAGGLE
-INE
+[API AEMET](https://opendata.aemet.es/centrodedescargas/inicio)
+[KAGGLE](https://www.kaggle.com/datasets/fcojavt/municipios-spain)
+[INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176851&menu=ultiDatos&idp=1254735727106)
 
