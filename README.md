@@ -4,7 +4,7 @@ Proyecto 3 como Analista de datos en IronHack Madrid.
 
 ## Descripción del proyecto:
 
-Se ha recogido una muestra de provincias de España a partir de una tabla con datos de los municipios de España descargada desde la fuente Kaggle.
+Se ha recogido una muestra de provincias de España a partir de una tabla con datos de los municipios de España, descargada desde la fuente Kaggle.
 
 Se ha enriquecido la muestra con valores climatológicos y de tipos de explotaciones agrarias para estudiar una relación entre el tipo de agricultura en cada provincia de nuestra muestra y los valores de precipitación media de estas.
 
@@ -12,15 +12,15 @@ Se ha enriquecido la muestra con valores climatológicos y de tipos de explotaci
 
 A partir de una base de datos completa de los municipios españoles y datos correspondientes al censo de habitantes y superficie, se ha optado por recoger una muestra aleatoria de provincias para nuestro análisis.
 
-A partir de ella se ha enriquecido el dato con valores climatológicos normales descargados desde la API de la Agencia estatal de meteorología (AEMET), donde se han obtenido valores como; precipitaciones medias, temperaturas, nubosidad... Posteriorme se han limpiado los datos y estrycturado las tablas para ser homogeneas.
+A partir de ella se ha enriquecido el dato con valores climatológicos normales descargados desde la API de la Agencia estatal de meteorología (AEMET), donde se han obtenido valores como; precipitaciones medias, temperaturas, nubosidad... Posteriorme se han limpiado los datos y estructurado las tablas para ser homogéneas.
 
-Se han obtenido, además, datos del último censo de explotaciones agrarias de nuestra muestra para poder compararlas después con nuestros valores de precipitaciones. Se han limpiado y estructurado también esta tabla.
+Se han obtenido, además, datos del último censo de explotaciones agrarias de nuestra muestra para poder compararlas después con nuestros valores de precipitaciones. Se ha limpiado, y estructurado también, esta tabla.
 
 Para la obtención de la información de la API de AEMET, se ha utilizado la biblioteca requests para hacer la solicitud y se han limpiado las tablas con pandas.
 
 Se crea una base de datos SQL para contener toda la información de manera estructurada y a la que hemos relizado las consultas para el posterior análisis.
 
-Finalmente, se ha realizado un análisis gráfico para ver la relación entre las precipitaciones por provincia y ella distribución del tipo de explotación agraria.
+Finalmente, se ha realizado un análisis gráfico para ver la relación entre las precipitaciones por provincia y la distribución del tipo de explotación agraria.
 
 ## Estructura de los datos:
 
@@ -47,17 +47,17 @@ Vamos a observar primero la evolución de la precipitación media mensual en cad
 
 ![Image](https://github.com/borjadola/Proyecto_ETC_Precipitaciones/blob/main/data/imagenes/prec_19-22_coruna.png)
 
-Observamos que la diferencia de precipitaciones entre las provincias del norte y sur del país son considerables, dejando al lado algunos picos que podemos ver en Cádiz. Las provincias de Cádiz y Huelva presentan valores altos en momentos puntuales del tiempo, sin embargo Almería persenta valores bajos durante todo el tiempo estudiado. En el norte la lluvia es más constante. Vamos a verlo mejor en una misma gráfica durante el año 2020.
+Observamos que la diferencia de precipitaciones entre las provincias del norte y sur del país son considerables, dejando al lado algunos picos que podemos ver en Cádiz. Las provincias de Cádiz y Huelva presentan valores altos en momentos puntuales del tiempo, sin embargo Almería presenta valores bajos durante todo el tiempo estudiado. En el norte la lluvia es más constante. Vamos a verlo mejor en una misma gráfica durante el año 2020.
 
 ![Image](https://github.com/borjadola/Proyecto_ETC_Precipitaciones/blob/main/data/imagenes/prec_2020_muestra.png)
 
-Vamos a ver ahora una comparativa entre el tipo de explotación agrícola predominante en Girona (donde hay gran niveles altos de precipitaciones) y Almería (que presenta los niveles más bajos).
+Vamos a ver ahora una comparativa entre el tipo de explotación agrícola predominante en Girona (donde hay gran niveles altos de precipitaciones) y Almería (que presenta los niveles más bajos). Datos recogidos del censo de 2020.
 
 ![Image](https://github.com/borjadola/Proyecto_ETC_Precipitaciones/blob/main/data/imagenes/tipos_cultivo_girona.png)
 
 ![Image](https://github.com/borjadola/Proyecto_ETC_Precipitaciones/blob/main/data/imagenes/tipos_cultivo_almeria.png)
 
-Podemos ver que los cultivos de invernadero son un tipo de cultivo de Almería que no existe en Girona. Se intuye que es debido a la alta radiación solar y las bajas precipitaciones, siendo un cultivo donde existe un aprovechamiento mayor del agua, escasa en esta zona.
+Podemos ver que los cultivos de invernadero y de tipo leñoso son un tipo de cultivo considerable en  Almería a diferencia de Girona. Se intuye que es debido a la alta radiación solar y las bajas precipitaciones, siendo un cultivo donde existe un aprovechamiento mayor del agua en el caso de invernaderos, y que depende menos de las precipitaciones.
 
 ## Fuentes:
 
