@@ -1,12 +1,14 @@
-## Proyecto_ETL_Precipitaciones
+# Proyecto_ETL_Precipitaciones
 
-Descripción del proyecto:
+Proyecto 3 como Analista de datos en IronHack Madrid.
+
+## Descripción del proyecto:
 
 Se ha recogido una muestra de provincias de España a partir de una tabla con datos de los municipios de España descargada desde la fuente Kaggle.
 
 Se ha enriquecido la muestra con valores climatológicos y de tipos de explotaciones agrarias para estudiar una relación entre el tipo de agricultura en cada provincia de nuestra muestra y los valores de precipitación media de estas.
 
-# Procedimiento:
+## Procedimiento:
 
 A partir de una base de datos completa de los municipios españoles y datos correspondientes al censo de habitantes y superficie, se ha optado por recoger una muestra aleatoria de provincias para nuestro análisis.
 
@@ -20,7 +22,7 @@ Se crea una base de datos SQL para contener toda la información de manera estru
 
 Finalmente, se ha realizado un análisis gráfico para ver la relación entre las precipitaciones por provincia y ella distribución del tipo de explotación agraria.
 
-# Estructura de los datos:
+## Estructura de los datos:
 
 Se han creado varias carpetas donde se contienen los datos de la tablas descargadas, las tablas limpiadas y notebooks de limpieza y análisis de datos.
 
@@ -30,9 +32,38 @@ Se han creado varias carpetas donde se contienen los datos de la tablas descarga
 
 - Carpeta sql; contiene las queries para la creación de la base de datos y las necesarias para exportar tablas que nos servirían para nuestro análisis final.
 
-Fuentes:
+## Visualización:
+
+Vamos a observar primero la evolución de la precipitación media mensual en cada una de las provincias de nuestra muestra.
+
+
+![Image](https://github.com/borjadola/Proyecto_ETC_Precipitaciones/blob/main/data/imagenes/prec_19-22_cadiz.png)
+
+![Image](https://github.com/borjadola/Proyecto_ETC_Precipitaciones/blob/main/data/imagenes/prec_19-22_huelva.png)
+
+![Image](https://github.com/borjadola/Proyecto_ETC_Precipitaciones/blob/main/data/imagenes/prec_19-22_girona.png)
+
+![Image](https://github.com/borjadola/Proyecto_ETC_Precipitaciones/blob/main/data/imagenes/prec_19-22_almeria.png)
+
+![Image](https://github.com/borjadola/Proyecto_ETC_Precipitaciones/blob/main/data/imagenes/prec_19-22_coruna.png)
+
+Observamos que la diferencia de precipitaciones entre las provincias del norte y sur del país son considerables, dejando al lado algunos picos que podemos ver en Cádiz. Las provincias de Cádiz y Huelva presentan valores altos en momentos puntuales del tiempo, sin embargo Almería persenta valores bajos durante todo el tiempo estudiado. En el norte la lluvia es más constante. Vamos a verlo mejor en una misma gráfica durante el año 2020.
+
+![Image](https://github.com/borjadola/Proyecto_ETC_Precipitaciones/blob/main/data/imagenes/prec_2020_muestra.png)
+
+Vamos a ver ahora una comparativa entre el tipo de explotación agrícola predominante en Girona (donde hay gran niveles altos de precipitaciones) y Almería (que presenta los niveles más bajos).
+
+![Image](https://github.com/borjadola/Proyecto_ETC_Precipitaciones/blob/main/data/imagenes/tipos_cultivo_girona.png)
+
+![Image](https://github.com/borjadola/Proyecto_ETC_Precipitaciones/blob/main/data/imagenes/tipos_cultivo_almeria.png)
+
+Podemos ver que los cultivos de invernadero son un tipo de cultivo de Almería que no existe en Girona. Se intuye que es debido a la alta radiación solar y las bajas precipitaciones, siendo un cultivo donde existe un aprovechamiento mayor del agua, escasa en esta zona.
+
+## Fuentes:
 
 [API AEMET](https://opendata.aemet.es/centrodedescargas/inicio)
+
 [KAGGLE](https://www.kaggle.com/datasets/fcojavt/municipios-spain)
+
 [INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176851&menu=ultiDatos&idp=1254735727106)
 
