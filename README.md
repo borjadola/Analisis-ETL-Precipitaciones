@@ -1,4 +1,6 @@
-# Proyecto_ETL_Precipitaciones
+<h1> Proyecto_ETL_Precipitaciones <h1>
+
+![Image](https://github.com/borjadola/Proyecto_ETC_Precipitaciones/blob/main/data/imagenes/img_portada.jpeg)
 
 Proyecto 3 como Analista de datos en IronHack Madrid.
 
